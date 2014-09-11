@@ -1,6 +1,6 @@
 # Possible Bug Between Hiera and puppetlabs/mysql
 
-This is a simple expamepls of a bug I am seeing with Hiera. When pupetlabs/mysql is installed (and being used) AND the Hiera yaml backend is in use, but NOT the first backend listedin hiera.yaml, the following error is produced on the puppet run:
+This is a simple expamepls of a bug I am seeing with Hiera. When pupetlabs/mysql is installed (and being used) AND the Hiera yaml backend is in use, but NOT the first backend listed in hiera.yaml, the following error is produced on the puppet run:
 
 ``` 
 Error: Error from DataBinding 'hiera' while looking up 'mysql::server::config_file': undefined method `datasourcefiles' for Hiera::Backend:Module on node <nodename>
@@ -33,4 +33,6 @@ Software details:
  - Ubuntu 14.04.1
  - Puppet 3.4.3 (running masterless)
  - Hiera 1.3.4
+ - puppetlabs-mysql 2.3.1
+ - puppetlabs-stdlib 4.3.2
 
