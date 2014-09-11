@@ -1,7 +1,7 @@
 ---
 :backends:
- - yaml
  - file
+ - yaml
 
 :hierarchy:
  - defaults
