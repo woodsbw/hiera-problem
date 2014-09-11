@@ -1,0 +1,16 @@
+---
+:backends:
+ - yaml
+ - file
+
+:hierarchy:
+ - defaults
+ - global
+
+:yaml:
+ :datadir: /etc/puppet/data
+
+:file:
+ :datadir: /etc/puppet/file-data
+
+ 
